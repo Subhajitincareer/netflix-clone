@@ -68,7 +68,7 @@ The site is fully responsive and works perfectly on:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/netflix-clone.git
+git clone https://github.com/subhjitincareer/netflix-clone.git
 ```
 
 2. Navigate to the project directory:
