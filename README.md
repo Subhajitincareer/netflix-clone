@@ -2,6 +2,10 @@
 
 A modern, responsive Netflix clone built with HTML, CSS, and JavaScript. Features a beautiful UI with smooth animations and interactive elements.
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/yourusername/netflix-clone/Netflix%20Clone%20CI/CD)
+![GitHub Pages](https://img.shields.io/github/deployments/yourusername/netflix-clone/github-pages)
+![License](https://img.shields.io/github/license/yourusername/netflix-clone)
+
 ![Netflix Clone Preview](preview.png)
 
 ## 🌟 Features
@@ -112,4 +116,30 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
 
-Project Link: [https://github.com/yourusername/netflix-clone](https://github.com/yourusername/netflix-clone) 
+Project Link: [https://github.com/yourusername/netflix-clone](https://github.com/yourusername/netflix-clone)
+
+## 🔄 CI/CD Pipeline
+
+This project uses GitHub Actions for Continuous Integration and Continuous Deployment:
+
+### Continuous Integration
+- HTML validation using HTMLHint
+- CSS validation using StyleLint
+- JavaScript validation using ESLint
+- Code formatting check using Prettier
+- Automatic image optimization
+
+### Continuous Deployment
+- Automatic deployment to GitHub Pages
+- Production build optimization
+- Asset compression and optimization
+- Deployment on successful builds only
+
+### Pipeline Workflow
+1. Code Push/PR to main branch
+2. Automated tests and validations
+3. Code quality checks
+4. Image optimization
+5. Deployment to GitHub Pages
+
+View the pipeline status in the [Actions tab](https://github.com/yourusername/netflix-clone/actions). 
