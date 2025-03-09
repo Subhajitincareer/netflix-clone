@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://assets.nflxext.com/en_us/layout/ecweb/netflix-app-icon_152.jpg">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png">
+  <link rel="mask-icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" color="#e50914">
+  <meta name="theme-color" content="#e50914">
+
+  <title>Netflix</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <!-- Netflix Logo -->
+      <div class="logo">
+        <svg viewBox="0 0 111 30" fill="#e50914" width="111" height="30" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true" role="img">
+          <path
+            d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,0 L99.5313525,0 L102.593495,7.87421502 L105.874965,0 L110.999156,0 L105.06233,14.2806261 Z M90.4686475,0 L85.8749649,0 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,0 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,0 L73.9366389,0 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,0 L66.3436123,0 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,0 L50.2183897,0 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,0 L32.7809542,0 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,0 L4.4690224,0 L10.562377,17.0315868 L10.562377,0 L15.2497891,0 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z">
+          </path>
+        </svg>
+      </div>
+
+      <!-- Language Selector and Sign In -->
+      <div class="header-right">
+        <div class="language-selector">
+          <label for="language-select" class="visually-hidden">Select Language</label>
+          <div class="select-wrapper">
+            <select id="language-select" name="LanguageSelect">
+              <option value="en-IN">English</option>
+              <option value="hi-IN">हिन्दी</option>
+            </select>
+          </div>
+        </div>
+        <a href="/in/login" class="sign-in-button">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background">
+      <img
+        src="https://assets.nflxext.com/ffe/siteui/vlv3/04ef06cc-5f81-4a8e-8db0-6430ba4af286/web/IN-en-20250224-TRIFECTA-perspective_3a9c67b5-1d1d-49be-8499-d179f6389935_large.jpg"
+        srcset="https://assets.nflxext.com/ffe/siteui/vlv3/04ef06cc-5f81-4a8e-8db0-6430ba4af286/web/IN-en-20250224-TRIFECTA-perspective_3a9c67b5-1d1d-49be-8499-d179f6389935_large.jpg 2000w,
+            https://assets.nflxext.com/ffe/siteui/vlv3/04ef06cc-5f81-4a8e-8db0-6430ba4af286/web/IN-en-20250224-TRIFECTA-perspective_3a9c67b5-1d1d-49be-8499-d179f6389935_medium.jpg 1279w,
+                   https://assets.nflxext.com/ffe/siteui/vlv3/04ef06cc-5f81-4a8e-8db0-6430ba4af286/web/IN-en-20250224-TRIFECTA-perspective_3a9c67b5-1d1d-49be-8499-d179f6389935_small.jpg 959w"
+        alt="Netflix Background" class="hero-image" />
+    </div>
+
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <p>Starts at ₹149. Cancel at any time.</p>
+
+      <form class="email-signup-form" method="post">
+        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+        <div class="form-group">
+          <div class="email-input-wrapper">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required minlength="5" maxlength="50" autocomplete="email" />
+          </div>
+          <button type="submit" class="get-started-button">
+            Get Started
+            <svg class="chevron-right" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Trending Section -->
+  <section class="trending">
+    <h2>Trending Now</h2>
+    <div class="trending-container">
+      <div class="nav-buttons">
+        <button class="nav-button prev" aria-label="Previous movies">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+        </button>
+        <button class="nav-button next" aria-label="Next movies">
+          <svg viewBox="0 0 24 24">
+            <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+          </svg>
+        </button>
+      </div>
+      <div class="movie-grid">
+        <div class="movie-card">
+          <div class="movie-poster"
+            style="background-image: url('https://occ-0-2483-3646.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSNtJvu8215Gl8GlVv_EEDFMgltlMgvQGUb_8kZAHQWv0mlLHHF5aYx9WYaiYPHUNiVUXpAqyh5D2zXQFaBmCDCgF6GqxEJIY5I.jpg?r=c68')">
+            <div class="movie-rank">1</div>
+            <div class="movie-info">
+              <h3 class="movie-title">Hi Nanna</h3>
+              <div class="watch-party-info">
+                <span class="viewer-count">
+                  <svg viewBox="0 0 24 24" class="viewer-icon">
+                    <path
+                      d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                  </svg>
+                  <span class="count">2.5K watching</span>
+                </span>
+                <button class="watch-party-btn" aria-label="Join watch party">
+                  <svg viewBox="0 0 24 24" class="party-icon">
+                    <path
+                      d="M21 6h-8.586l2.293-2.293-1.414-1.414L10 5.586 6.707 2.293 5.293 3.707 7.586 6H3c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h18c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2zm-1 14H4c-.551 0-1-.449-1-1V9c0-.551.449-1 1-1h16c.551 0 1 .449 1 1v10c0 .551-.449 1-1 1z" />
+                  </svg>
+                  Join Party
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster"
+            style="background-image: url('https://occ-0-2483-3646.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABc1SHebFZ_TaHoRnYe6GQzBKQwRoOnbx4kIqR8tPWtKxCUVxHq9NWbO5qXF_OnX-_PSUqrjYu4MqGTTG-7lqnGj_-_0YVgPBcBE.jpg?r=c68')">
+            <div class="movie-rank">2</div>
+            <div class="movie-info">
+              <h3 class="movie-title">Leo</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster"
+            style="background-image: url('https://occ-0-2483-3646.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVr8nYuAKBD7HIHg9tQH_q7oICo4qzXrXYZnTd7fzk6ORi4yJHUHQvKCZR0Ue_i-3UxGxaZ3ONYvyBvxZkQw3LAJJJyAR-wKpKo.jpg?r=dae')">
+            <div class="movie-rank">3</div>
+            <div class="movie-info">
+              <h3 class="movie-title">Jawan</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster"
+            style="background-image: url('https://occ-0-2483-3646.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfP4oB44KGUmq-Q9AfXEH0Hy8nqR1RskkGGh6gS9UWfRPZXXWm9fL8cEAqNVDLiLUFk-uP4heNUYhvYoMabqgRFmX2QUhKBOBd8.jpg?r=636')">
+            <div class="movie-rank">4</div>
+            <div class="movie-info">
+              <h3 class="movie-title">Animal</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster"
+            style="background-image: url('https://occ-0-2483-3646.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTvC8RuqHEG3HlTwT5F7GLNfQZJ8vBxF3lWBGw0_XhkG4YBaFEKGYHD2qz5_5vxHvlhKHgpjxMlZyJEJHYMQEEoHRDA5iHQpGHY.jpg?r=7c0')">
+            <div class="movie-rank">5</div>
+            <div class="movie-info">
+              <h3 class="movie-title">Dunki</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster"
+            style="background-image: url('https://occ-0-2483-3646.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZf5kMOWCJ8tQWQjxTbU6qxLGNSYVmJB1LLIBjZ8y-rKGGk2qYBCn7nR0NL4UwBXeH_txgFD0QHqVn2BC8tUhPbL3nF0Ij1YPtE.jpg?r=389')">
+            <div class="movie-rank">6</div>
+            <div class="movie-info">
+              <h3 class="movie-title">Salaar</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster"
+            style="background-image: url('https://occ-0-2483-3646.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABd-DrDHJJ6HQpwZyQYRxXvKgvlGhBsKp8iLlP0O6GLSc_yJKCYqGQl7G3SVqtXkGqFaYEBYYqtPzjYToJXqE8RFv8-fkHhqFTvs.jpg?r=7c3')">
+            <div class="movie-rank">7</div>
+            <div class="movie-info">
+              <h3 class="movie-title">12th Fail</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster"
+            style="background-image: url('https://occ-0-2483-3646.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQkKHGmUKh0QcVtMhR6wMjPxUvqBcVSA6QgWqtRXhL4_1wuAQDtTwvPBKVFYa-RYnBYDxgXRyU3PBGsJTuE3p-Kp0P6D3lqHvKY.jpg?r=b5e')">
+            <div class="movie-rank">8</div>
+            <div class="movie-info">
+              <h3 class="movie-title">Sam Bahadur</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster"
+            style="background-image: url('https://occ-0-2483-3646.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdZhq_IPVjLvykLGysZYOPKDuYu8UxwbnYCLZhEGBhqQODqxw-sAFUF-mRxA7P8d5hJ_E_eqWHDGbhD3StLWJ3RaF5McVYXlEtI.jpg?r=7c5')">
+            <div class="movie-rank">9</div>
+            <div class="movie-info">
+              <h3 class="movie-title">Tiger 3</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster"
+            style="background-image: url('https://occ-0-2483-3646.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbod3HEQ8e1n7-RMYpfXAjRzsmdywF16AK7p7Ys7toNK49kV8YWIds9AzfzwW_BqbhN6BLbINMajFxZ0x9KHOKl1s2g5fG1waUo.jpg?r=cf5')">
+            <div class="movie-rank">10</div>
+            <div class="movie-info">
+              <h3 class="movie-title">VidaaMuyarchi</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>More reasons to join</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Enjoy on your TV</h3>
+        <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        <div class="feature-icon">
+          <svg class="animated-icon tv-icon" viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="tv-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff0a0a" />
+                <stop offset="100%" style="stop-color:#e50914" />
+              </linearGradient>
+              <radialGradient id="dot-gradient" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" style="stop-color:#ff1a1a" />
+                <stop offset="100%" style="stop-color:#e50914" />
+              </radialGradient>
+              <filter id="tv-glow">
+                <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                <feMerge>
+                  <feMergeNode in="coloredBlur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <rect class="tv-body" x="10" y="20" width="80" height="50" rx="5" fill="url(#tv-gradient)" />
+            <rect class="tv-screen" x="15" y="25" width="70" height="40" fill="#0a0a0a" />
+            <circle class="tv-dot" cx="50" cy="25" r="2" fill="url(#dot-gradient)" />
+            <path class="tv-wave" d="M30 45 Q50 35 70 45" stroke="url(#tv-gradient)" stroke-width="2" fill="none" />
+            <rect class="tv-stand" x="35" y="70" width="30" height="5" fill="url(#tv-gradient)" />
+            <rect class="tv-base" x="45" y="75" width="10" height="5" fill="url(#tv-gradient)" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <h3>Download your shows to watch offline</h3>
+        <p>Save your favourites easily and always have something to watch.</p>
+        <div class="feature-icon">
+          <svg class="animated-icon download-icon" viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="download-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff0a0a" />
+                <stop offset="100%" style="stop-color:#e50914" />
+              </linearGradient>
+              <linearGradient id="arrow-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff1a1a" />
+                <stop offset="100%" style="stop-color:#e50914" />
+              </linearGradient>
+            </defs>
+            <circle class="download-circle" cx="50" cy="50" r="40" stroke="url(#download-gradient)" stroke-width="4"
+              fill="none" />
+            <path class="download-arrow" d="M50 20 V60 M35 45 L50 60 L65 45" stroke="url(#arrow-gradient)"
+              stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+            <path class="download-progress" d="M50 80 h25" stroke="url(#download-gradient)" stroke-width="4"
+              stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <h3>Watch everywhere</h3>
+        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+        <div class="feature-icon">
+          <svg class="animated-icon devices-icon" viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="device-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff0a0a" />
+                <stop offset="100%" style="stop-color:#e50914" />
+              </linearGradient>
+              <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#ff1a1a" />
+                <stop offset="100%" style="stop-color:#e50914" />
+              </linearGradient>
+            </defs>
+            <rect class="laptop" x="20" y="45" width="60" height="35" rx="2" fill="url(#device-gradient)" />
+            <rect class="laptop-screen" x="25" y="50" width="50" height="25" fill="#0a0a0a" />
+            <rect class="laptop-base" x="15" y="80" width="70" height="3" fill="url(#device-gradient)" />
+            <rect class="phone" x="65" y="20" width="15" height="25" rx="2" fill="url(#device-gradient)" />
+            <rect class="phone-screen" x="67" y="23" width="11" height="19" fill="#0a0a0a" />
+            <circle class="phone-button" cx="72.5" cy="43" r="1" fill="#fff" />
+            <path class="stream-wave" d="M30 62.5 Q50 52.5 70 62.5" stroke="url(#wave-gradient)" stroke-width="1"
+              fill="none" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <h3>Create profiles for kids</h3>
+        <p>Send kids on adventures with their favourite characters in a space made just for them — free with your
+          membership.</p>
+        <div class="feature-icon">
+          <svg class="animated-icon kids-icon" viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="crown-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#ffd700" />
+                <stop offset="50%" style="stop-color:#ff0a0a" />
+                <stop offset="100%" style="stop-color:#ffd700" />
+              </linearGradient>
+              <linearGradient id="smile-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#ff1a1a" />
+                <stop offset="100%" style="stop-color:#e50914" />
+              </linearGradient>
+              <radialGradient id="face-gradient" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" style="stop-color:#ff0a0a" />
+                <stop offset="100%" style="stop-color:#e50914" />
+              </radialGradient>
+            </defs>
+            <circle class="kid-face" cx="50" cy="45" r="25" fill="url(#face-gradient)" />
+            <circle class="kid-eye left" cx="40" cy="40" r="4" fill="#fff" />
+            <circle class="kid-eye right" cx="60" cy="40" r="4" fill="#fff" />
+            <path class="kid-smile" d="M40 50 Q50 60 60 50" stroke="url(#smile-gradient)" stroke-width="3"
+              fill="none" />
+            <path class="kid-crown" d="M25 30 L40 40 L50 25 L60 40 L75 30" stroke="url(#crown-gradient)"
+              stroke-width="3" fill="none" />
+            <rect class="kid-body" x="35" y="70" width="30" height="20" rx="10" fill="url(#face-gradient)" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is Netflix?</summary>
+        <div class="faq-content">
+          <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+            documentaries and more – on thousands of internet-connected devices.</p>
+          <p>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price.
+            There's always something new to discover, and new TV shows and movies are added every week!</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How much does Netflix cost?</summary>
+        <div class="faq-content">
+          <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly
+            fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+        </div>
+      </details>
+
+      <!-- Add remaining FAQ items -->
+    </div>
+
+    <!-- Email Signup Form -->
+    <div class="email-signup">
+      <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+      <form class="email-form" method="post">
+        <div class="form-group">
+          <div class="email-input-wrapper">
+            <label for="email-signup">Email address</label>
+            <input type="email" id="email-signup" name="email" required minlength="5" maxlength="50"
+              autocomplete="email" />
+          </div>
+          <button type="submit" class="get-started-button">
+            Get Started
+            <svg class="chevron-right" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="contact-info">Questions? Call <a href="tel:000-800-919-1743">000-800-919-1743</a></p>
+
+      <nav class="footer-links">
+        <ul>
+          <li><a href="https://help.netflix.com/support/412">FAQ</a></li>
+          <li><a href="https://help.netflix.com">Help Centre</a></li>
+          <li><a href="/youraccount">Account</a></li>
+          <li><a href="https://media.netflix.com/">Media Centre</a></li>
+          <li><a href="http://ir.netflix.com/">Investor Relations</a></li>
+          <li><a href="https://jobs.netflix.com/jobs">Jobs</a></li>
+          <li><a href="/watch">Ways to Watch</a></li>
+          <li><a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a></li>
+          <li><a href="https://help.netflix.com/legal/privacy">Privacy</a></li>
+          <li><a href="#">Cookie Preferences</a></li>
+          <li><a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a></li>
+          <li><a href="https://help.netflix.com/contactus">Contact Us</a></li>
+          <li><a href="https://fast.com">Speed Test</a></li>
+          <li><a href="https://help.netflix.com/legal/notices">Legal Notices</a></li>
+          <li><a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a></li>
+        </ul>
+      </nav>
+
+      <div class="language-selector">
+        <label for="language-select-footer">Select Language</label>
+        <div class="select-wrapper">
+          <select id="language-select-footer" name="LanguageSelect">
+            <option value="en-IN">English</option>
+            <option value="hi-IN">हिन्दी</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="copyright">Netflix India</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
